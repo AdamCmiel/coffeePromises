@@ -2,7 +2,8 @@
 
 A quick demo illustrating the mechanics of creating, returning, consuming, and throwing with Bluebird promises.
 
-###Create and a Promise
+###Create and return a Promise
+	var Promise = require('bluebird');
 	var createPromise = function createPromise(object, condition) {
 		condition || (condition = true);
 		return new Promise(function(resolve, reject) {
@@ -19,6 +20,7 @@ A quick demo illustrating the mechanics of creating, returning, consuming, and t
 		});
 	};
 
+	Promise = require 'bluebird'
 	createPromise = (object, condition=true) ->
 	  new Promise (resolve, reject) ->
 		switch condition
